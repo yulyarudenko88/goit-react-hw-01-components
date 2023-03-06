@@ -1,28 +1,11 @@
 /* @import-normalize; */
 
-:root {
-  /* --section-background-color: #2f303a; */
-  /* --hero-background-color: #c4c4c4; */
-  /* --list-background-color: #f5f4fa; */
-  /* --footer-socials-background: rgba(255, 255, 255, 0.1); */
-  /* --activity-thumb-background: rgba(47, 48, 58, 0.8); */
-  
-  
-  --title-color: #212121;
+:root { --main-color: #212121;
   --desc-color: #757575;
   --white-color: rgba(255, 255, 255, 0.6);
-  
-  /* --accent-color: #2196f3;
-  --activ-btn-color: #188ce8;
-  --dark-logo-color: #000000; */
-  /* --border-project-color: #eeeeee;
-  --border-header-color: #ececec;
-  --border-close-button: rgba(0, 0, 0, 0.1);
-  --border-input-form: rgba(33, 33, 33, 0.2);
-  --border-input-footer: rgba(255, 255, 255, 0.3);
-  --social-icon-color: #afb1b8;
-  --placeholder-text-color: rgba(117, 117, 117, 0.5);
-  --hero-linear-gradient: rgba(47, 48, 58, 0.4); */
+  --border-color: rgba(33, 33, 33, 0.2);
+  --background-color: rgb(221, 241, 240);
+
   --shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
  
@@ -36,6 +19,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: var(--main-color);
+  background-color: #fcfbfb;
 }
 
 code {
@@ -43,21 +29,14 @@ code {
     monospace;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
-.list {
+ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
-}
-
-.container {
-  /* width: 1200px; */
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 img {

@@ -10,29 +10,29 @@ const Profile = ({
 }) => {
   return (
     <div className={css.profile}>
-      <div className="description">
+      <div className={css.description}>
         <img
           src={avatar}
           alt="User avatar"
-          className="avatar"
+          className={css.avatar}
         />
-        <p className="name">{name}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <p className={css.name}>{name}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className={css.stats}>
         <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{userFollowers}</span>
+          <span className={css.label}>Followers</span>
+          <span className={css.quantity}>{userFollowers}</span>
         </li>
         <li>
-          <span className="label">Views</span>
-          <span className="quantity">{userViews}</span>
+          <span className={css.label}>Views</span>
+          <span className={css.quantity}>{userViews}</span>
         </li>
         <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{userLikes}</span>
+          <span className={css.label}>Likes</span>
+          <span className={css.quantity}>{userLikes}</span>
         </li>
       </ul>
     </div>
@@ -44,11 +44,7 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location:PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.exact({
-    userFollowers: PropTypes.string.isRequired,
-    userViews: PropTypes.string.isRequired,
-    userLikes: PropTypes.string.isRequired,
-  }),
+  stats: PropTypes.object,
 }
 
 export default Profile;
