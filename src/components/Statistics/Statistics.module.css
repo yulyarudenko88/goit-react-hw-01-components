@@ -1,5 +1,8 @@
 .statistics {
   max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: var(--white-color);
   box-shadow: var(--shadow);
   border-radius: 4px;

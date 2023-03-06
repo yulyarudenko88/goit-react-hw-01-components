@@ -1,5 +1,7 @@
 .profile {
   max-width: 240px;
+  margin-left: auto;
+    margin-right: auto;
 
   background-color: var(--white-color);
   box-shadow: var(--shadow);
@@ -68,5 +70,5 @@
 
 .quantity {
   font-weight: 500;
-  color: black;
+  color: var(--main-color);
 }

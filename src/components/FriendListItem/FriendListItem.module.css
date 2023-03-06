@@ -1,0 +1,53 @@
+.item {
+  display: flex;  
+  padding: 8px;
+  justify-content: left;
+  align-items: center;
+
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 250ms var(--time-function);
+}
+
+.item:hover,
+.item:focus {
+  transform: translateX(20px);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  margin-right: 20px;
+}
+
+.online {
+  background-color: rgb(61, 204, 61);
+}
+
+.offline {
+  background-color: rgb(197, 49, 49);
+}
+
+.avatar {
+  min-width: 48px;
+  min-height: 48px;
+  margin-right: 20px;
+
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 500;
+
+  color: var(--main-color);
+}
